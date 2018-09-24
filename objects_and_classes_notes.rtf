@@ -1,0 +1,253 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf600
+{\fonttbl\f0\fnil\fcharset0 LucidaGrande-Bold;\f1\fnil\fcharset0 LucidaGrande;\f2\fmodern\fcharset0 Courier;
+\f3\fmodern\fcharset0 Courier-Bold;}
+{\colortbl;\red255\green255\blue255;\red38\green38\blue38;\red255\green255\blue255;\red53\green53\blue53;
+\red239\green239\blue239;\red54\green100\blue164;}
+{\*\expandedcolortbl;;\cssrgb\c20000\c20000\c20000;\cssrgb\c100000\c100000\c100000;\cssrgb\c27059\c27059\c27059;
+\cssrgb\c94902\c94902\c94902;\cssrgb\c26667\c47451\c70196;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}.}{\leveltext\leveltemplateid1\'02\'00.;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+\margl1440\margr1440\vieww21180\viewh12920\viewkind0
+\deftab720
+\pard\pardeftab720\sl560\sa316\partightenfactor0
+
+\f0\b\fs48 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Objects and Classes\
+\pard\pardeftab720\sl420\sa295\partightenfactor0
+
+\fs36 \cf2 Basics\
+\pard\pardeftab720\sl320\sa240\partightenfactor0
+
+\f1\b0\fs24 \cf2 Given the following Person class:\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f2 \cf4 \cb5 \strokec4 class Person(object):\
+    def __init__(self, name, email, phone):\
+        self.name = name\
+        self.email = email\
+        self.phone = phone\
+\
+    def greet(self, other_person):\
+        print 'Hello %s, I am %s!' % (other_person.name, self.name)\
+\pard\pardeftab720\sl320\sa240\partightenfactor0
+
+\f1 \cf2 \cb3 \strokec2 Write code to\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl300\partightenfactor0
+\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	1.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Instantiate an instance object of Person with name of 'Sonny', email of 'sonny@hotmail.com', and phone of '483-485-4948', store it in the variable\'a0
+\f2 \cf4 \cb5 \strokec4 sonny
+\f1 \cf2 \cb3 \strokec2 .\cb1 \
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	2.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Instantiate another person with the name of 'Jordan', email of 'jordan@aol.com', and phone of '495-586-3456', store it in the variable 'jordan'.\cb1 \
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	3.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Have sonny greet jordan using the greet method.\cb1 \
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	4.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Have jordan greet sonny using the greet method.\cb1 \
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	5.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Write a\'a0
+\f2 \cf4 \cb5 \strokec4 print
+\f1 \cf2 \cb3 \strokec2 \'a0statement to print the contact info (email and phone) of Sonny.\cb1 \
+\ls1\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	6.	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Write another\'a0
+\f2 \cf4 \cb5 \strokec4 print
+\f1 \cf2 \cb3 \strokec2 \'a0statement to print the contact info of Jordan.\cb1 \
+\pard\pardeftab720\sl420\sa295\partightenfactor0
+
+\f0\b\fs36 \cf2 \cb3 Make your own class\
+\pard\pardeftab720\sl320\sa240\partightenfactor0
+
+\f1\b0\fs24 \cf2 Create a class\'a0
+\f2 \cf4 \cb5 \strokec4 Vehicle
+\f1 \cf2 \cb3 \strokec2 . A Vehicle object will have 3 attributes:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl300\partightenfactor0
+\ls2\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 make\cb1 \
+\ls2\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 model\cb1 \
+\ls2\ilvl0\cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 year\cb1 \
+\pard\pardeftab720\sl320\sa240\partightenfactor0
+\cf2 \cb3 A vehicle is created thus:\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f2 \cf4 \cb5 \strokec4 car = Vehicle('Nissan', 'Leaf', 2015)\
+\pard\pardeftab720\sl320\sa240\partightenfactor0
+
+\f1 \cf2 \cb3 \strokec2 And you can access it's attributes individually like so:\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f2 \cf4 \cb5 \strokec4 print car.make, car.model, car.year\
+\pard\pardeftab720\sl420\sa295\partightenfactor0
+
+\f0\b\fs36 \cf2 \cb3 \strokec2 Add a method\
+\pard\pardeftab720\sl320\sa240\partightenfactor0
+
+\f1\b0\fs24 \cf2 Add a\'a0
+\f2 \cf4 \cb5 \strokec4 print_info
+\f1 \cf2 \cb3 \strokec2 \'a0method to the\'a0
+\f2 \cf4 \cb5 \strokec4 Vehicle
+\f1 \cf2 \cb3 \strokec2 \'a0class. It will print out the vehicle's information like so:\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f2 \cf4 \cb5 \strokec4 >>> car.print_info()\
+2015 Nissan Leaf\
+\pard\pardeftab720\sl420\sa295\partightenfactor0
+
+\f0\b\fs36 \cf2 \cb3 \strokec2 Add a method 2\
+\pard\pardeftab720\sl320\sa240\partightenfactor0
+
+\f1\b0\fs24 \cf2 Go back to the\'a0
+\f2 \cf4 \cb5 \strokec4 Person
+\f1 \cf2 \cb3 \strokec2 \'a0class. Add a\'a0
+\f2 \cf4 \cb5 \strokec4 print_contact_info
+\f1 \cf2 \cb3 \strokec2 \'a0method to the\'a0
+\f2 \cf4 \cb5 \strokec4 Person
+\f1 \cf2 \cb3 \strokec2 \'a0class that will print out the contact info for a object instance of Person. You will use it thus:\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f2 \cf4 \cb5 \strokec4 >>> sonny.print_contact_info()\
+Sonny's email: {\field{\*\fldinst{HYPERLINK "mailto:sonny@hotmail.com"}}{\fldrslt \cf6 \strokec6 sonny@hotmail.com}}, Sonny's phone number: 483-485-4948\
+\pard\pardeftab720\sl420\sa295\partightenfactor0
+
+\f0\b\fs36 \cf2 \cb3 \strokec2 Add an instance variable (attribute)\
+\pard\pardeftab720\sl320\sa240\partightenfactor0
+
+\f1\b0\fs24 \cf2 Add a friends instance variable (attribute) to the\'a0
+\f2 \cf4 \cb5 \strokec4 Person
+\f1 \cf2 \cb3 \strokec2 \'a0class. You will initialize it to an empty list within the constructor (
+\f2 \cf4 \cb5 \strokec4 __init__
+\f1 \cf2 \cb3 \strokec2 ). Once you've done this you should be able to add a friend to a person using list's\'a0
+\f2 \cf4 \cb5 \strokec4 append
+\f1 \cf2 \cb3 \strokec2 \'a0method:\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f2 \cf4 \cb5 \strokec4 jordan.friends.append(sonny)\
+sonny.friends.append(jordan)\
+\pard\pardeftab720\sl320\sa240\partightenfactor0
+
+\f1 \cf2 \cb3 \strokec2 You should also be able to get the number of friends a person has by using the\'a0
+\f2 \cf4 \cb5 \strokec4 len
+\f1 \cf2 \cb3 \strokec2 \'a0function on his friends:\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f2 \cf4 \cb5 \strokec4 >>> len(jordan.friends)\
+1\
+\pard\pardeftab720\sl420\sa295\partightenfactor0
+
+\f0\b\fs36 \cf2 \cb3 \strokec2 Add a\'a0
+\f3 \cf4 \cb5 \strokec4 add_friend
+\f0 \cf2 \cb3 \strokec2 \'a0method\
+\pard\pardeftab720\sl320\sa240\partightenfactor0
+
+\f1\b0\fs24 \cf2 The fact that a person's\'a0
+\f2 \cf4 \cb5 \strokec4 friends
+\f1 \cf2 \cb3 \strokec2 \'a0attribute is a list is an implementation detail of the Person class. It is often desired to hide implementation details from the users of your object/class. Implement an\'a0
+\f2 \cf4 \cb5 \strokec4 add_friend
+\f1 \cf2 \cb3 \strokec2 \'a0method to\'a0
+\f2 \cf4 \cb5 \strokec4 Person
+\f1 \cf2 \cb3 \strokec2 , so that in order to add a friend, you'd only have to do:\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f2 \cf4 \cb5 \strokec4 jordan.add_friend(sonny)\
+\pard\pardeftab720\sl320\sa240\partightenfactor0
+
+\f1 \cf2 \cb3 \strokec2 Instead of\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f2 \cf4 \cb5 \strokec4 jordan.friends.append(sonny)\
+\pard\pardeftab720\sl420\sa295\partightenfactor0
+
+\f0\b\fs36 \cf2 \cb3 \strokec2 Add a\'a0
+\f3 \cf4 \cb5 \strokec4 num_friends
+\f0 \cf2 \cb3 \strokec2 \'a0method\
+\pard\pardeftab720\sl320\sa240\partightenfactor0
+
+\f1\b0\fs24 \cf2 Similarly, to get the number of friends a person has, we'd like to hide the implementation detail that there is a\'a0
+\f2 \cf4 \cb5 \strokec4 friends
+\f1 \cf2 \cb3 \strokec2 \'a0attribute which is a list. Implement a\'a0
+\f2 \cf4 \cb5 \strokec4 num_friends
+\f1 \cf2 \cb3 \strokec2 \'a0method which returns the number of friends the person currently has:\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f2 \cf4 \cb5 \strokec4 >>> jordan.num_friends()\
+1\
+\pard\pardeftab720\sl420\sa295\partightenfactor0
+
+\f0\b\fs36 \cf2 \cb3 \strokec2 Count number of greetings\
+\pard\pardeftab720\sl320\sa240\partightenfactor0
+
+\f1\b0\fs24 \cf2 We want to count the number of times a person has greeted someone. To do this, we'll add another attribute, call it say\'a0
+\f2 \cf4 \cb5 \strokec4 greeting_count
+\f1 \cf2 \cb3 \strokec2 , and initialize it to 0. Then each time the\'a0
+\f2 \cf4 \cb5 \strokec4 greet
+\f1 \cf2 \cb3 \strokec2 \'a0method is called, we'll increment\'a0
+\f2 \cf4 \cb5 \strokec4 greeting_count
+\f1 \cf2 \cb3 \strokec2 \'a0by 1.\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f2 \cf4 \cb5 \strokec4 >>> sonny.greeting_count\
+0\
+>>> sonny.greet(jordan)\
+>>> sonny.greeting_count\
+1\
+>>> sonny.greet(jordan)\
+>>> sonny.greeting_count\
+2\
+\pard\pardeftab720\sl420\sa295\partightenfactor0
+
+\f3\b\fs36 \cf4 __repr__
+\f0 \cf2 \cb3 \strokec2 \
+\pard\pardeftab720\sl320\sa240\partightenfactor0
+
+\f1\b0\fs24 \cf2 You may notice that when you are working with a person object, it's representation in the Python shell is pretty cryptic and unhelpful:\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f2 \cf4 \cb5 \strokec4 >>> jordan\
+<__main__.Person object at 0x106976410>\
+\pard\pardeftab720\sl320\sa240\partightenfactor0
+
+\f1 \cf2 \cb3 \strokec2 You can change that! Just add a\'a0
+\f2 \cf4 \cb5 \strokec4 __repr__
+\f1 \cf2 \cb3 \strokec2 \'a0(dunder rep-er) method to the\'a0
+\f2 \cf4 \cb5 \strokec4 Person
+\f1 \cf2 \cb3 \strokec2 \'a0class and have it return a string. Whatever you return there will be used to "represent" your person object. For example, say I want a Person to be represented like\'a0
+\f2 \cf4 \cb5 \strokec4 <Person Jordan\'a0{\field{\*\fldinst{HYPERLINK "mailto:jordan@aol.com"}}{\fldrslt \cf6 \strokec6 jordan@aol.com}}\'a0495-586-3456>
+\f1 \cf2 \cb3 \strokec2 , I could implement\'a0
+\f2 \cf4 \cb5 \strokec4 __repr__
+\f1 \cf2 \cb3 \strokec2 \'a0thus:\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f2 \cf4 \cb5 \strokec4     def __repr__(self):\
+        return '' % (self.name, self.email, self.phone)\
+\pard\pardeftab720\sl320\sa240\partightenfactor0
+
+\f1 \cf2 \cb3 \strokec2 Implement your own\'a0
+\f2 \cf4 \cb5 \strokec4 __repr__
+\f1 \cf2 \cb3 \strokec2 \'a0method, and you can represent your person objects however you want. Incidentally,\'a0
+\f2 \cf4 \cb5 \strokec4 __repr__
+\f1 \cf2 \cb3 \strokec2 \'a0is also used when you use\'a0
+\f2 \cf4 \cb5 \strokec4 %r
+\f1 \cf2 \cb3 \strokec2 \'a0to render a value with a format string.\
+\pard\pardeftab720\sl420\sa295\partightenfactor0
+
+\f0\b\fs36 \cf2 Bonus Challenge\
+\pard\pardeftab720\sl320\sa240\partightenfactor0
+
+\f1\b0\fs24 \cf2 Keep track of the number of unique people a person has greeted, and be able to report that number via the\'a0
+\f2 \cf4 \cb5 \strokec4 num_unique_people_greeted
+\f1 \cf2 \cb3 \strokec2 \'a0method:\
+\pard\pardeftab720\sl280\partightenfactor0
+
+\f2 \cf4 \cb5 \strokec4 >>> sonny.num_unique_people_greeted()\
+0\
+>>> sonny.greet(jordan)\
+>>> sonny.num_unique_people_greeted()\
+1\
+>>> sonny.greet(jordan)\
+>>> sonny.num_unique_people_greeted()\
+1\
+>>> sonny.greet(dee_ann)\
+>>> sonny.num_unique_people_greeted()\
+2\
+}
